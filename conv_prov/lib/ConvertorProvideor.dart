@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 import 'Constant.dart';
 
 class ConvertorProvidor extends ChangeNotifier {
-  String fromUnit = ConvertorProvidor().selMap.keys.toList()[0];
-  String toUnit = ConvertorProvidor().selMap.keys.toList()[0];
+  String fromUnit = 'NIS';
+  String toUnit = 'NIS';
   double textFieldValue = 1.0;
   String result = "0";
   int selectedIndex = 0;
@@ -39,8 +39,6 @@ class ConvertorProvidor extends ChangeNotifier {
     notifyListeners();
   }
 
-/* getUnit(Function fromToUnit, int i){
-    return fromToUnit(unitConvCurrencyVal.keys.toList()[index]);
-  }*/
+
 
 }
